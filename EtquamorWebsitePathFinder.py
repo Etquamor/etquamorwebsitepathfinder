@@ -44,7 +44,7 @@ def pathlistEditor(pathlistPath, extension, defaultPath=True, extensionDefined=F
 def pathFinder(site, pathList, foundPaths = []):
     if not site.endswith("/"):
         site += "/"
-    print("\n[#] Total number of paths ==>",len(pathList),"\n")
+    print("\n[#] Total number of loaded paths ==>",len(pathList),"\n")
     try:
         for path in pathList:
             if (pathList.index(path)+1)%150==0:
